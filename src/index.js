@@ -56,7 +56,9 @@ class MyGame extends Phaser.Scene {
   }
 
   create() {
-    this.ship = this.add.image(500, 400, 'ship')
+    // this.ship = this.add.image(500, 400, 'ship')
+		this.ship = this.physics.add.image(500, 400, 'ship')
+		this.ship.setCollideWorldBounds(true)
 		this.bullets = new Bullets(this)
 
 		this.input.on('pointermove', (pointer) => {
