@@ -6,12 +6,20 @@ const W = window.innerWidth
 const config = {
   type: Phaser.AUTO,
   parent: "phaser-example",
-  backgroundColor: '#f9f9f9',
+  backgroundColor: '#231c1a',
   width: W,
   height: H,
   scale: {
     mode: Phaser.Scale.ScaleModes.FIT,
-    autoCenter: Phaser.Scale.Center.CENTER_BOTH
+    autoCenter: Phaser.Scale.Center.CENTER_BOTH,
+    min: {
+      width: 300,
+      height: 600
+    },
+    max: {
+      width: 450,
+      height: 1200
+    }
   },
   title: 'zooeyGame',
   version: '1.0.0',
