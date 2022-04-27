@@ -8,7 +8,9 @@ const config = {
   parent: "phaser-example",
   backgroundColor: '#231c1a',
   width: W,
+  // width: 375,
   height: H,
+  // height: 760,
   scale: {
     mode: Phaser.Scale.ScaleModes.FIT,
     autoCenter: Phaser.Scale.Center.CENTER_BOTH,
